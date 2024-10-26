@@ -14,11 +14,18 @@ const Header = () => {
         </a>
         <span>&bull;</span>
         <a
+          href="https://godekaffebarer.dk"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GodeKaffebarer.dk
+        </a>
+        <a
           href="https://godebagerier.dk"
           target="_blank"
           rel="noopener noreferrer"
         >
-          godebagerier.dk
+          GodeBagerier.dk
         </a>
       </div>
       <header>
