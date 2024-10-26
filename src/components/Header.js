@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../static/godekaffebarer-logo.svg";
+import logo from "../../static/godebagerier-logo.svg";
 
 const Header = () => {
   return (
@@ -14,15 +14,15 @@ const Header = () => {
         </a>
         <span>&bull;</span>
         <a
-          href="https://godekaffebarer.dk"
+          href="https://godebagerier.dk"
           target="_blank"
           rel="noopener noreferrer"
         >
-          GodeKaffebarer.dk
+          godebagerier.dk
         </a>
       </div>
       <header>
-        <a href="/" target="_self" aria-label="godekaffebarer.dk">
+        <a href="/" target="_self" aria-label="godebagerier.dk">
           <img src={logo} alt="" height="48" />
         </a>
         <svg
@@ -44,7 +44,7 @@ const Header = () => {
           target="_blank"
           className="instagramFollow"
           rel="noopener noreferrer"
-          aria-label="Følg godekaffebarer.dk på Instagram"
+          aria-label="Følg godebagerier.dk på Instagram"
         >
           <svg
             width="20"

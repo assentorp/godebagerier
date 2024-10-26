@@ -44,8 +44,8 @@ const IndexPage = () => {
       <Analytics />
 
       <Seo
-        title="20 gode kaffebarer og bagerier i København → godekaffebarer.dk"
-        description="Et overblik over de bedste gode kaffebarer og bagerier i København og omegn. Kaffebarerne er kommet på ud for tre centrale kriterier: Smag, Stemning og Service."
+        title="20 gode bagerier og bagerier i København → godebagerier.dk"
+        description="Et overblik over de bedste gode bagerier og bagerier i København og omegn. bagerierne er kommet på ud for tre centrale kriterier: Smag, Stemning og Service."
       />
       <Helmet>
         <meta

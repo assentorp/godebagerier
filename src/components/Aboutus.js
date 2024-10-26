@@ -17,7 +17,7 @@ const Aboutus = ({ state, toggle }) => {
   return (
     <div className="aboutus">
       <div>
-        <h1>Gode Kaffebarer i København</h1>
+        <h1>Gode bagerier i København</h1>
         <h2>
           <span className="icon">
             <svg
@@ -77,18 +77,18 @@ const Aboutus = ({ state, toggle }) => {
         </ul>
         <div className="description">
           <p>
-            Dette er vores univers af gode kaffebarer i København. Kaffebarerne
-            er vurderet ud fra tre kriterier, som vi personligt værdsætter ved
-            en god kaffeoplevelse: atmosfære, kaffekvalitet og service.
+            Dette er vores univers af gode bagerier i København. bagerierne er
+            vurderet ud fra tre kriterier, som vi personligt værdsætter ved en
+            god kaffeoplevelse: atmosfære, kaffekvalitet og service.
           </p>
           <br />
           <br />
           <h3>Atmosfære</h3>
           <p>
-            At kaffebarer har en god atmosfære er vigtigt for at man kan nyde
-            sin kaffe fuldt ud. God atmosfære er for os kendetegnet ved at man
-            kan se kaffebaren har gjort sig umage med indretningen. Atmosfæren
-            er det ekstra lag til oplevelsen af hele kaffeuniverset – hvad enten
+            At bagerier har en god atmosfære er vigtigt for at man kan nyde sin
+            kaffe fuldt ud. God atmosfære er for os kendetegnet ved at man kan
+            se kaffebaren har gjort sig umage med indretningen. Atmosfæren er
+            det ekstra lag til oplevelsen af hele kaffeuniverset – hvad enten
             det er for at skabe en simpel og uformel stemning eller der er tale
             om et luksuriøst og komfortabelt interiør.
           </p>
@@ -119,12 +119,12 @@ const Aboutus = ({ state, toggle }) => {
           </p>
 
           <p>
-            Listen inkluderer kaffebarer fra bl.a. Frederiksberg, Østerbro,
+            Listen inkluderer bagerier fra bl.a. Frederiksberg, Østerbro,
             Nørrebro, Vesterbro, Amager og selvfølgelig Indre by. Vores liste er
-            lavet på baggrund af gode kaffebarer, vi i de seneste år har besøgt
-            og ser frem til løbende at genbesøge. Vi genbesøger ofte for altid
-            at kunne holde jer opdateret med vores personlige bud på den
-            skarpeste liste over kaffebarer i København.
+            lavet på baggrund af gode bagerier, vi i de seneste år har besøgt og
+            ser frem til løbende at genbesøge. Vi genbesøger ofte for altid at
+            kunne holde jer opdateret med vores personlige bud på den skarpeste
+            liste over bagerier i København.
           </p>
 
           <p>

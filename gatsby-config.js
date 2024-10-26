@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: "16 gode restauranter i København → GodeKaffeBarer.dk",
-    titleTemplate: "%s → godekaffebarer.dk",
+    title: "16 gode bagerier i København → godebagerier.dk",
+    titleTemplate: "%s → godebagerier.dk",
     description:
-      "Et overblik over de bedste gode restauranter i København og omegn. Restauranterne er kommet på ud for tre centrale kriterier: Smag, Stemning og Service.",
-    siteUrl: `https://godekaffebarer.dk`,
-    url: "https://godekaffebarer.dk",
-    image: "/godekaffebarer.png",
+      "Et overblik over de bedste gode bagerier i København og omegn. Bagerierne er kommet på ud for tre centrale kriterier: Smag, Stemning og Service.",
+    siteUrl: `https://godebagerier.dk`,
+    url: "https://godebagerier.dk",
+    image: "/godebagerier.png",
     twitterUsername: "@assentorp",
   },
   plugins: [

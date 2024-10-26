@@ -171,7 +171,7 @@ const Restaurant = ({ restaurant, setOpenRestaurant }) => {
                   e.target.click();
                 }
               }}
-              aria-label="Følg godekaffebarer.dk på Instagram"
+              aria-label="Følg godebagerier.dk på Instagram"
             >
               <svg
                 role="img"

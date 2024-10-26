@@ -41,7 +41,7 @@ const Maps = ({ state, foodState, openRestaurant, setOpenRestaurant }) => {
         {/* <ul className="map-link">
           <li>
             <a
-              href="https://www.instagram.com/godekaffebarer.dk/"
+              href="https://www.instagram.com/godebagerier.dk/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -62,7 +62,7 @@ const Maps = ({ state, foodState, openRestaurant, setOpenRestaurant }) => {
                 <div className="title">
                   Find nye gode restauranter først på Instagram
                 </div>
-                <div className="subtitle">Følg os på @godekaffebarer.dk</div>
+                <div className="subtitle">Følg os på @godebagerier.dk</div>
               </div>
             </a>
           </li>

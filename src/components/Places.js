@@ -13,10 +13,10 @@ const Places = ({ foodState, setOpenRestaurant, filter }) => {
       <div className="placesTop">
         &nbsp;
         {foodState === "Coffee"
-          ? count.length + ` gode kaffebarer i København`
+          ? count.length + ` gode bagerier i København`
           : foodState === "Bakery"
           ? count.length + ` gode bagerier i København`
-          : data.length + ` gode kaffebarer i København`}
+          : data.length + ` gode bagerier i København`}
       </div>
       <div className="placeIndex">
         {newArray
