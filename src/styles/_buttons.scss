@@ -1,0 +1,145 @@
+.button-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 24px 16px 24px;
+
+  @media screen and (max-width: $on-tablet) {
+    flex-direction: column;
+    padding: 0px 8px 0px 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    @media screen and (max-width: $on-tablet) {
+      padding: 8px 12px 12px 0px;
+    }
+
+    button {
+      font-family: "SF Pro Text", "SF Pro Icons", "Inter";
+      margin-right: 12px;
+      font-weight: 400;
+      border: 0;
+      font-size: 14px;
+      padding: 8px 12px;
+      color: #111;
+      border-radius: 20px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3),
+        0 1px 3px 1px rgba(60, 64, 67, 0.15);
+      transition: all 0.2s ease;
+      @media screen and (max-width: $on-tablet) {
+        font-size: 12px;
+        padding: 8px 12px;
+        margin-right: 8px;
+      }
+
+      @media screen and (max-width: 328px) {
+        font-size: 11px;
+      }
+
+      &.last {
+        margin-right: 0;
+      }
+
+      &.active {
+        background: $brandcolor;
+        color: #fff;
+        transition: all 0.2s ease;
+        &:hover {
+          background: $brandcolor;
+          color: #fff;
+        }
+      }
+
+      &:hover {
+        background: #f0f0f0;
+        color: #111;
+        transition: all 0.2s ease;
+      }
+
+      &:focus,
+      &:active {
+        outline: 0;
+      }
+    }
+  }
+  form {
+    width: 100%;
+    max-width: 320px;
+    @media screen and (max-width: $on-tablet) {
+      width: 100%;
+      max-width: 100%;
+      display: none;
+    }
+    input {
+      font-family: "SF Pro Text", "SF Pro Icons", "Inter", sans-serif;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      box-shadow: 0 1px 2px rgb(0 0 0 / 0.1), 0 1px 1px rgb(0 0 0 / 0.06);
+      border-radius: 24px;
+      color: #222;
+      width: 100%;
+      max-width: 320px;
+      margin: 0;
+      font-size: 14px;
+      padding: 8px 16px;
+      text-indent: 12px;
+      background: white url("../images/search.svg") no-repeat scroll 9px 7px;
+      padding-left: 30px;
+      -webkit-appearance: none;
+      cursor: pointer;
+      &::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        margin-left: 10px;
+        background: linear-gradient(
+            45deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0) 43%,
+            $brandcolor 45%,
+            $brandcolor 55%,
+            rgba(0, 0, 0, 0) 57%,
+            rgba(0, 0, 0, 0) 100%
+          ),
+          linear-gradient(
+            135deg,
+            transparent 0%,
+            transparent 43%,
+            $brandcolor 55%,
+            $brandcolor 45%,
+            transparent 57%,
+            transparent 100%
+          );
+      }
+
+      &::placeholder {
+        color: #aaa;
+      }
+      &:focus-within,
+      &:active {
+        box-shadow: 0 0 0 2px $brandcolor;
+        outline: none;
+      }
+      @media screen and (max-width: $on-tablet) {
+        font-size: 14px;
+        width: 100%;
+        max-width: 100%;
+        text-indent: 24px;
+        input {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

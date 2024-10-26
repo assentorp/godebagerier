@@ -1,0 +1,252 @@
+.restaurant-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 12px 0;
+  padding: 24px;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.1), 0 1px 1px rgb(0 0 0 / 0.06);
+  cursor: pointer;
+  font-family: "IBM Plex Sans", sans-serif;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $brandcolor-hover;
+    border: 1px solid rgba($brandcolor, 0.1);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    @media screen and (max-width: $on-mobile) {
+      background: #fff;
+      border: 1px solid rgba($brandcolor, 0.08);
+      box-shadow: 0 1px 2px rgb(0 0 0 / 0.1), 0 1px 1px rgb(0 0 0 / 0.06);
+    }
+  }
+
+  @media screen and (max-width: $on-mobile) {
+    padding: 16px;
+    margin: 12px 0;
+    border-radius: 6px;
+  }
+
+  .leaflet-popup-content & {
+    box-shadow: none;
+    padding: 12px;
+    line-height: 1;
+    border: none;
+    padding-bottom: 16px;
+    margin: 0;
+    .image {
+      display: none;
+    }
+    .restaurant-buttons {
+      a {
+        span {
+          display: none;
+        }
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  .image {
+    width: 104px;
+    height: 104px;
+    margin-right: 24px;
+    @media screen and (max-width: $on-mobile) {
+      margin-top: 0;
+    }
+    img {
+      box-shadow: 0 4px 3px rgb(0 0 0 / 0.07), 0 2px 2px rgb(0 0 0 / 0.06);
+      border-radius: 8px;
+      width: 104px;
+      height: 104px;
+      @media screen and (max-width: $on-tablet) {
+        width: 96px;
+        height: 96px;
+        margin-right: 24px;
+      }
+      @media screen and (max-width: $on-mobile) {
+        width: 72px;
+        height: 72px;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 0.1), 0 1px 1px rgb(0 0 0 / 0.06);
+        margin-right: 16px;
+      }
+    }
+    @media screen and (max-width: $on-tablet) {
+      width: 96px;
+      height: 96px;
+      margin-right: 24px;
+    }
+    @media screen and (max-width: $on-mobile) {
+      width: 72px;
+      margin-right: 16px;
+      height: 72px;
+    }
+  }
+
+  .restaurant {
+    width: 100%;
+
+    .name {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      margin-bottom: 6px;
+      margin-top: 2px;
+      font-weight: 600;
+      color: #222;
+      text-decoration: none;
+      @media screen and (max-width: $on-mobile) {
+        margin-top: 1px;
+        font-size: 14px;
+        margin-bottom: 4px;
+      }
+    }
+
+    .directions {
+      font-size: 14px;
+      margin-bottom: 12px;
+      display: inline-flex;
+      align-items: center;
+      color: #666;
+      a {
+        color: #666;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      @media screen and (max-width: $on-mobile) {
+        font-size: 12px;
+        margin-bottom: 6px;
+      }
+    }
+
+    .reviewopen {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      background: none;
+      border: none;
+      white-space: nowrap;
+      padding: 0;
+      color: $brandcolor;
+      cursor: pointer;
+
+      @media screen and (max-width: $on-mobile) {
+        font-size: 12px;
+      }
+
+      svg {
+        margin-left: 4px;
+        fill: $brandcolor;
+        transition: all 0.2s ease;
+        &.expanded {
+          transform: rotate(180deg);
+          transition: all 0.2s ease;
+        }
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .review {
+      font-size: 14px;
+      line-height: 21px;
+      color: #666;
+      margin-left: 12px;
+      @media screen and (max-width: $on-mobile) {
+        font-size: 12px;
+      }
+      &.margin {
+        margin-left: 0px;
+        margin-top: 12px;
+      }
+    }
+
+    .ratings {
+      margin-top: 8px;
+      .atmosphere,
+      .taste,
+      .service {
+        margin-bottom: 4px;
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        svg {
+          margin-right: 3px;
+          fill: $brandcolor;
+        }
+      }
+    }
+
+    .michelin {
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      margin-bottom: 16px;
+      @media screen and (max-width: $on-mobile) {
+        font-size: 11px;
+      }
+      svg {
+        margin-right: 3px;
+        fill: $brandcolor;
+      }
+      b {
+        font-weight: 600;
+      }
+      span {
+        margin-left: 3px;
+      }
+    }
+
+    .restaurant-buttons {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      margin-top: 6px;
+      a {
+        margin-right: 16px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        transition: all 0.2s;
+        @media screen and (max-width: $on-mobile) {
+          font-size: 12px;
+          margin-right: 16px;
+        }
+        span {
+          margin-left: 6px;
+          color: $brandcolor;
+          @media screen and (max-width: $on-mobile) {
+            display: none;
+          }
+        }
+        &:hover {
+          background: rgba($brandcolor, 0.05);
+          border-radius: 6px;
+        }
+        &:active {
+          background: rgba($brandcolor, 0.2);
+        }
+        &.instagram {
+          span {
+            margin-left: 0;
+          }
+        }
+        svg {
+          fill: $brandcolor;
+          @media screen and (max-width: $on-mobile) {
+            width: 14px;
+            height: 14px;
+          }
+        }
+      }
+    }
+  }
+}

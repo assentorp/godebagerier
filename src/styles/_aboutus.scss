@@ -1,0 +1,53 @@
+.aboutus {
+  padding: 24px;
+  ul {
+    margin-bottom: 24px;
+
+    li {
+      font-size: 16px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 16px;
+        border: 1px solid #f2f2f2;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+      }
+      .info {
+        strong {
+          font-weight: 700;
+          color: #222;
+        }
+
+        .title {
+          margin-top: 8px;
+        }
+      }
+
+      a,
+      a:visited {
+        color: $brandcolor;
+        text-decoration: none;
+        display: block;
+        &.inline {
+          display: inline-block;
+        }
+
+        &:hover,
+        &:active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .description p {
+    text-wrap: pretty;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 8px 0 16px 0;
+  }
+}

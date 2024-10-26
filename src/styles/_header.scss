@@ -1,0 +1,176 @@
+.toptop {
+  height: 28px;
+  line-height: 1;
+  padding: 0 24px;
+  color: $brandcolor;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-bottom: 1px solid rgba($brandcolor, 0.1);
+  font-size: 12px;
+  @media screen and (max-width: $on-mobile) {
+    padding: 0 12px;
+  }
+  a {
+    text-decoration: none;
+    color: $brandcolor;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 24px 8px 24px;
+  @media screen and (max-width: $on-mobile) {
+    padding: 12px;
+  }
+
+  img {
+    @media screen and (max-width: 328px) {
+      height: 24px;
+    }
+    @media screen and (max-width: 640px) {
+      height: 40px;
+    }
+  }
+  .bouncearrow {
+    height: 16px;
+    width: 16px;
+    margin-left: auto;
+    margin-right: 28px;
+    opacity: 0;
+    animation: bouncearrow 5s ease;
+    animation-iteration-count: 2;
+    @media screen and (max-width: $on-mobile) {
+      margin-right: 24px;
+    }
+  }
+
+  .instagramFollow {
+    background: rgba($brandcolor, 0.05);
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: $brandcolor;
+    text-decoration: none;
+    font-size: 14px;
+    animation: bgcolor 5s ease;
+    animation-iteration-count: 2;
+    @media screen and (max-width: $on-tablet) {
+      font-size: 12px;
+      padding: 8px;
+    }
+    svg {
+      fill: $brandcolor;
+    }
+
+    &:hover {
+      background: rgba($brandcolor, 0.2);
+    }
+  }
+
+  .godekaffebarerMail {
+    background: rgba($brandcolor, 0.05);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: $brandcolor;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 8px;
+    svg {
+      fill: $brandcolor;
+    }
+    &:hover {
+      background: rgba($brandcolor, 0.2);
+    }
+  }
+
+  @keyframes bgcolor {
+    0% {
+      background: rgba($brandcolor, 0.05);
+    }
+    40% {
+      background: rgba($brandcolor, 0.05);
+    }
+    45% {
+      background: rgba($brandcolor, 0.15);
+    }
+    75% {
+      background: rgba($brandcolor, 0.15);
+    }
+    80% {
+      background: rgba($brandcolor, 0.05);
+    }
+    100% {
+      background: rgba($brandcolor, 0.05);
+    }
+  }
+
+  @keyframes bouncearrow {
+    0% {
+      transform: translateX(0%);
+      opacity: 0;
+    }
+    40% {
+      transform: translateX(0%);
+      opacity: 0;
+    }
+    45% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(100%);
+    }
+    55% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    60% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    65% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    70% {
+      opacity: 1;
+      transform: translateX(100%);
+    }
+    75% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    80% {
+      opacity: 0;
+      transform: translateX(0%);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(0%);
+    }
+  }
+  .contactus {
+    color: $brandcolor;
+    font-size: 16px;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    @media screen and (max-width: $on-tablet) {
+      font-size: 14px;
+    }
+  }
+}

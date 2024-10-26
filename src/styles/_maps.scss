@@ -1,0 +1,176 @@
+.maps-buttons {
+  @media screen and (max-width: $on-tablet) {
+    position: fixed;
+    top: 24px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    button {
+      font-family: "SF Pro Text", "SF Pro Icons", "Inter", sans-serif;
+      display: block;
+      z-index: 99999;
+      padding: 8px;
+      margin-right: 12px;
+      color: $brandcolor;
+      background: #fff;
+      border-radius: 17px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      box-shadow: 0 1px 2px rgb(60 64 67 / 30%),
+        0 1px 3px 1px rgb(60 64 67 / 15%);
+      &.active {
+        background: $brandcolor;
+        color: #fff;
+      }
+      &:active {
+        background: $brandcolor;
+        color: #fff;
+        transition: all 0.2s ease-in-out;
+        transform: scale(0.98);
+        box-shadow: 0 1px 2px rgb(60 64 67 / 30%),
+          0 2px 6px 2px rgb(60 64 67 / 15%);
+        .maps-toggle-inside {
+          svg {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.maps-toggle {
+  font-family: "SF Pro Text", "SF Pro Icons", "Inter", sans-serif;
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  margin-left: -48px;
+  z-index: 9999;
+  padding: 10px 14px;
+  color: #fff;
+  background: $brandcolor;
+  border-radius: 26px;
+  border: none;
+  display: none;
+  font-size: 14px;
+  line-height: 1;
+  box-shadow: 0 1px 2px rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+  cursor: pointer;
+  &:active {
+    background: $brandcolor;
+    transform: scale(0.98);
+    box-shadow: 0 1px 2px rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    .maps-toggle-inside {
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+  @media screen and (max-width: $on-tablet) {
+    display: block;
+  }
+  .maps-toggle-inside {
+    display: flex;
+    align-items: center;
+    svg {
+      margin-right: 8px;
+      fill: #fff;
+      width: 20px;
+    }
+  }
+}
+
+.leaflet-control-zoom {
+  @media screen and (max-width: $on-mobile) {
+    display: none;
+  }
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 12px !important;
+  padding: 6px;
+  font-family: "SF Pro Text", "SF Pro Icons", "Inter", sans-serif;
+  .leaflet-popup-content {
+    border-radius: 2px !important;
+    margin: 0;
+    .restaurant-wrapper {
+      .name {
+        font-size: 16px;
+        font-family: "SF Pro Text", "SF Pro Icons", "Inter", sans-serif;
+      }
+      .address,
+      .city,
+      .lastvisit,
+      .michelin {
+        font-size: 12px;
+        font-family: "SF Pro Text", "SF Pro Icons", "Inter", sans-serif;
+      }
+      .restaurant-buttons {
+        .reviewopen {
+          font-size: 12px;
+        }
+        svg {
+          width: 16px;
+        }
+        .instagram {
+          margin-right: 0;
+        }
+      }
+      .review {
+        margin-top: 0 !important;
+        font-size: 11px;
+        line-height: 1.3;
+      }
+    }
+  }
+}
+.leaflet-popup-tip-container {
+  .leaflet-popup-tip {
+    width: 15px !important;
+    height: 15px !important;
+  }
+}
+.leaflet-popup {
+  margin-left: 4px;
+  .leaflet-popup-close-button {
+    display: none !important;
+    // right: -12px !important;
+    // top: -12px !important;
+    // background: #fff !important;
+    // color: $brandcolor !important;
+    // width: 32px !important;
+    // height: 32px !important;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // padding: 0 !important;
+    // margin: 0 !important;
+    // border-radius: 16px !important;
+    // box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+  }
+}
+.marker-animation {
+  animation-name: bounce;
+  animation-duration: 0.4s;
+  animation-iteration-count: 2;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes bounce {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -20px;
+  }
+  100% {
+    top: 0;
+  }
+}

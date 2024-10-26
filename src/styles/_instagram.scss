@@ -1,0 +1,74 @@
+.follow {
+  margin-left: auto;
+  text-decoration: none;
+  background: $brandcolor;
+  color: #fff;
+  padding: 2px 8px;
+  font-size: 16px;
+  border-radius: 2px;
+  &:hover {
+    background: $brandcolor-hover;
+  }
+}
+.instagramContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 8px;
+  z-index: 9999;
+
+  .item {
+    background: #fff;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+      0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+    border-radius: 5px;
+    width: 49%;
+    list-style-type: none;
+    margin: 0 0 24px 0;
+
+    @media screen and (max-width: $on-mobile) {
+      width: 100%;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+
+    .info {
+      padding: 8px 16px;
+
+      .location {
+        margin: 8px 0;
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      .caption {
+        color: #767676;
+        font-size: 14px;
+        line-height: 24px;
+        margin: 0 0 16px 0;
+      }
+
+      .engagement {
+        color: #767676;
+        font-size: 12px;
+        display: flex;
+        justify-content: flex-start;
+
+        .metric {
+          display: flex;
+          margin-right: 16px;
+          margin-bottom: 8px;
+          svg {
+            fill: #d6d6d6;
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+  }
+}

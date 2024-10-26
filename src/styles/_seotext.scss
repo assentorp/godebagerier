@@ -1,0 +1,28 @@
+.seoText {
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 8px 0 16px 0;
+    text-wrap: pretty;
+  }
+  h3 {
+    text-wrap: balance;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+  }
+  a {
+    color: $brandcolor;
+    font-weight: 400;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  img {
+    max-width: 100%;
+    margin: 24px 0;
+  }
+}
