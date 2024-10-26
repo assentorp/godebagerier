@@ -2,10 +2,10 @@ import React from "react";
 import Seo from "../components/SEO";
 import "../styles/styles.scss";
 import data from "../data/restaurants.json";
-import ckimage1 from "../../static/bagerier-kobenhavn.jpg";
-import ckexample1 from "../../static/bagerier-kobenhavn/bagerier-kobenhavn-1.jpg";
-import ckexample2 from "../../static/bagerier-kobenhavn/bagerier-kobenhavn-2.jpg";
-import ckexample3 from "../../static/bagerier-kobenhavn/bagerier-kobenhavn-3.jpg";
+import ckimage1 from "../../static/godebagerier-kobenhavn.jpg";
+import ckexample1 from "../../static/godebagerier-kobenhavn/godebagerier-kobenhavn-1.jpg";
+import ckexample2 from "../../static/godebagerier-kobenhavn/godebagerier-kobenhavn-2.jpg";
+import ckexample3 from "../../static/godebagerier-kobenhavn/godebagerier-kobenhavn-3.jpg";
 import logo from "../../static/godebagerier-logo.svg";
 
 const KaffestederKobenhavn = () => {

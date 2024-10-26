@@ -9,7 +9,7 @@ import {
 import L from "leaflet";
 import Restaurant from "./Restaurant";
 import data from "../data/restaurants.json";
-import coffeesvg from "../../static/coffee.svg";
+import breadsvg from "../../static/bread.svg";
 
 const Maps = ({ state, foodState, openRestaurant, setOpenRestaurant }) => {
   state = {
@@ -30,8 +30,8 @@ const Maps = ({ state, foodState, openRestaurant, setOpenRestaurant }) => {
 
   if (typeof window !== "undefined") {
     const foodIcon = new L.Icon({
-      iconUrl: coffeesvg,
-      iconRetinaUrl: coffeesvg,
+      iconUrl: breadsvg,
+      iconRetinaUrl: breadsvg,
       iconAnchor: [5, 55],
       popupAnchor: [10, -44],
       iconSize: [37, 43],

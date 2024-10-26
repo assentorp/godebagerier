@@ -20,6 +20,7 @@ const Header = () => {
         >
           GodeKaffebarer.dk
         </a>
+        <span>&bull;</span>
         <a
           href="https://godebagerier.dk"
           target="_blank"

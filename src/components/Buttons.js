@@ -42,7 +42,7 @@ const Buttons = ({ changeFoodState, foodState, setFilter, filter }) => {
           type="search"
           value={filter}
           onChange={saveValue}
-          placeholder="Søg efter kaffebar..."
+          placeholder="Søg efter bageri..."
         />
       </form>
     </div>
