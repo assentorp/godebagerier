@@ -12,17 +12,17 @@ const MapsButtons = ({ changeFoodState, foodState }) => {
       </button>
       <button
         onClick={changeFoodState}
-        className={foodState === "Coffee" ? "active" : ""}
-        id="Coffee"
-      >
-        God Kaffe
-      </button>
-      <button
-        onClick={changeFoodState}
         className={foodState === "Bakery" ? "active" : ""}
         id="Bakery"
       >
         Gode Bagerier
+      </button>
+      <button
+        onClick={changeFoodState}
+        className={foodState === "Coffee" ? "active" : ""}
+        id="Coffee"
+      >
+        God Kaffe
       </button>
     </div>
   );

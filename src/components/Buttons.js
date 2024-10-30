@@ -24,17 +24,17 @@ const Buttons = ({ changeFoodState, foodState, setFilter, filter }) => {
         </button>
         <button
           onClick={changeFoodState}
-          className={foodState === "Coffee" ? "active" : ""}
-          id="Coffee"
-        >
-          God Kaffe
-        </button>
-        <button
-          onClick={changeFoodState}
           className={foodState === "Bakery" ? "active" : ""}
           id="Bakery"
         >
           Gode Bagerier
+        </button>
+        <button
+          onClick={changeFoodState}
+          className={foodState === "Coffee" ? "active" : ""}
+          id="Coffee"
+        >
+          God Kaffe
         </button>
       </div>
       <form action="." onSubmit={handleSubmit}>
