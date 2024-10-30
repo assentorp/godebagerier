@@ -8,7 +8,6 @@ import MapContainer from "../components/Maps";
 import MapsButtons from "../components/MapsButtons";
 import Seo from "../components/SEO";
 import Helmet from "react-helmet";
-import { Analytics } from "@vercel/analytics/react";
 
 const IndexPage = () => {
   const [foodState, setFoodState] = useState("All");
